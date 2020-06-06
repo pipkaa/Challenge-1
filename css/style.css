@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(0, 6%, 24%);
+    background: url('../images/bg-pattern-desktop.svg');
+    margin: 0;
+}
+
+.container {
+    width: 1440px;
+    max-width: 100%;
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+.mobile-nav {
+    display: none;
+}
+
+#main {
+    display: flex;
+}
+
+.navbar {
+    padding: 38px 0 0 200px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.content-left {
+    width: 60%;
+    background-image: url(../images/bg-pattern-desktop.svg);
+}
+
+.inner {
+    padding: 60px 0 140px 170px;
+}
+
+
+h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    color: hsl(0, 6%, 24%);
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
+}
+
+span {
+    color: hsl(0, 36%, 70%);
+    font-weight: 200;
+    letter-spacing: 0.3em;
+}
+
+p {
+    color: hsl(0, 36%, 70%);
+    line-height: 1.5em;
+    padding-right: 250px;
+    margin-bottom: 30px;
+}
+
+.content-right {
+    width: 40%;
+}
+
+.content-right{
+    background: url('../images/hero-desktop.jpg')no-repeat center;
+    background-size: cover;
+}
+
+/*** Form ***/
+
+#email-form {
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+
+input {
+    background: none;
+    outline: none;
+    border: 1px solid hsl(0, 36%, 70%);
+    height: 58px;
+    width: 448px;
+    border-radius: 60px;
+    padding: 9px 35px;
+}
+
+input:focus {
+    border-width: 1.5px;
+    outline: none;
+    box-shadow:inset 0 0 5px hsla(0, 36%, 70%, 0.5);
+}
+
+input::placeholder {
+    color: hsl(0, 36%, 70%);
+    opacity: 0.8;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    padding: 15px;
+    width: 103px;
+    height: 58px;
+    border-radius: 60px;
+    transform: translate(-120px, 4px);
+    transition: opacity 0.2s ease;
+}
+
+button:hover {
+    background-image: linear-gradient(135deg, hsl(0, 74%, 74%), hsl(0, 80%, 86%));
+}
+
+button:active {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*** Form END ***/
+
+
+/*** Footer ***/
+
+footer {
+    text-align: center;
+    background-color: hsl(0, 36%, 70%);
+    padding: 1px;
+}
+
+p.attribution {
+    color: white;
+    font-size: 15px;
+    padding: 2px;
+}
+
+p.attribution a {
+    color: hsl(0, 6%, 24%);
+    text-decoration: none;
+}
+
+p.attribution a:hover {
+    text-decoration: underline;
+}
+
+/*** Footer END ***/
+
+/*** Mobile style ***/
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 375px;
+        margin: 0 auto;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .mobile-nav {
+        display: block;
+        padding: 1.5rem;
+    }
+
+    .mobile-logo {
+        width: 7rem;
+    }
+
+    #main {
+        flex-direction: column-reverse;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .content-left {
+        width: 100%;
+    }
+
+    .inner {
+        padding: 0;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 40px;
+        letter-spacing: .5rem;
+        line-height: 1.1;
+        margin-top: 3rem;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1.8;
+        padding: 0 25px;
+        margin-bottom: 35px;
+    }
+
+    #email-form {
+        margin-bottom: 50px;
+    }
+
+    input {
+        width: 18.5rem;
+        height: 3rem;
+        padding: 5px 30px;
+        margin: 0 20px;
+    }
+
+    button {
+        width: 4rem;
+        height: 3rem;
+        padding: 15px;
+        transform: translate(120px, -48px);
+    }
+
+
+    /*.show-text {*/
+        /*visibility: hidden;*/
+        /*width: 1.3rem;*/
+        /*transform: translate(-110px, 4px);*/
+    /*}*/
+
+    .content-right {
+        background-image: url(../images/hero-mobile.jpg);
+        background-repeat: no-repeat;
+        height: 15rem;
+        width: 100%;
+    }
+}
+
+/*** Mobile style END ***/

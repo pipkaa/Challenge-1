@@ -1,32 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Base Apparel</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Base Apparel</title>
 </head>
 <body>
-  <div class="main">
-    <div class="content">
-        <img src="./images/logo.svg" alt="Base Apparel Logo">
-        <h1>We're</h1>
-        <h2>coming soon</h2>
-        <p>Hello fellow shoppers! We're currently building our new fashion store.
-            Add your email below to stay up-to-date with announcements and our launch deals.</p>
+<div class="container">
+    <div class="mobile-nav">
+        <nav>
+            <img class="mobile-logo" src="./images/logo.svg" alt="logo">
+        </nav>
     </div>
-      <form>
-          <input type="email" id="email" aria-label="email" placeholder="Email Address">
-          <input type="image" src="./images/icon-arrow.svg" alt="Submit">
-      </form>
-  </div>
-  
-  <footer>
+
+    <div id="main">
+        <div class="content-left">
+            <nav class="navbar">
+                <img class="logo" src="./images/logo.svg" alt="Base Apparel Logo">
+            </nav>
+
+            <div class="inner">
+                <h1>
+                    <span>We're</span>
+                    <br>coming
+                    <br>soon
+                </h1>
+                <p>Hello fellow shoppers! We're currently building our new fashion store.
+                    Add your email below to stay up-to-date with announcements and our launch deals.</p>
+
+                <form id="email-form">
+                    <input type="email" class="email" aria-label="email" placeholder="Email Address">
+                    <img class="error" src="./images/icon-error.svg" alt="Error icon">
+                    <button type="submit">
+                        <img src="./images/icon-arrow.svg" alt="Arrow icon">
+                    </button>
+                    <p class="show-text">please provide a valid email</p>
+                </form>
+            </div>
+        </div>
+
+        <div class="content-right"></div>
+    </div>
+</div>
+
+<footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/pipkaa">Olli Sav</a>.
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/pipkaa">Olli Sav</a>.
     </p>
-  </footer>
+</footer>
 </body>
 </html>
