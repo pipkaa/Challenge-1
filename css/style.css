@@ -122,6 +122,25 @@ button:active {
     box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+.show-text {
+    text-align: center;
+    display: none;
+}
+
+form.error .show-text {
+    display: block;
+}
+
+
+.error-icon {
+    visibility: hidden;
+    transform: translate(-130px, 5px);
+}
+
+form.error .error-icon {
+visibility: visible;
+}
+
 /*** Form END ***/
 
 
@@ -202,7 +221,7 @@ p.attribution a:hover {
         margin-bottom: 35px;
     }
 
-    #email-form {
+    #form {
         margin-bottom: 50px;
     }
 
@@ -220,12 +239,18 @@ p.attribution a:hover {
         transform: translate(120px, -48px);
     }
 
+    .error-icon {
+        visibility: hidden;
+        width: 1.3rem;
+        transform: translate(-110px, 4px);
+    }
 
-    /*.show-text {*/
-        /*visibility: hidden;*/
-        /*width: 1.3rem;*/
-        /*transform: translate(-110px, 4px);*/
-    /*}*/
+    button {
+        width: 4rem;
+        height: 3rem;
+        padding: 15px;
+        transform: translate(120px, -48px);
+    }
 
     .content-right {
         background-image: url(../images/hero-mobile.jpg);
